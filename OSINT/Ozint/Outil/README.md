@@ -1,3 +1,6 @@
+RI cosmos : osint sur les avions 
+bellingcats : OSINT enquêtes et terrains numériques,openfacto 
+
 
 newspapermap.com : permet de consulter les journaux dans le monde 
 radio.garden : permet d'écouter les radios
@@ -23,3 +26,20 @@ Kapsr / snov / signal hire : donne info numéro
 Epieos : retrouver les numéros
 crystalknows.com : connaitre le profile de la personne de linkedin 
 unitracker api : permet de connaitre les liens des institutions chinoises 
+sinwindie : memo linkedin
+whatsmyname.app : permet de chercher voir où existe le profil 
+archives.org : compte supprimé/message
+spoonbill.io : modificaiton twitter 
+Strava pour voir les parcourts
+Hunter.io : adresse mail
+DEHASHED : trouver le mdp 
+Getcontact/truecaller/callapp : numéro de téléphone
+data.dicatatoralert. org : trajet des avions
+plane-notify : voir les vols des avions
+Globe.adsbexchange / flightradar : pour voir les trajets des avions 
+marinetraffic : voir les trajets des bateaux
+Overpass turbo : permet de voir le lieu en fonction des photos 
+OSM finder :idem mais interface graphique 
+Suncalc : exposition du soleil et des ombres 
+invid-project : permet de débunker les vidéos 
+bellingcats : OSINT enquêtes et terrains numériques 

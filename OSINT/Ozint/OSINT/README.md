@@ -87,3 +87,33 @@
 	* ajouter /detail/recent-activity/ 
 	* fec.gov : retrouver don chez personnes américaines
 * Passer sur google dork si on ne sait jamais
+
+* Instagram :
+	* Google dork :
+		* pseudo site:instagram.com site:instagram.com/pseudo
+
+* Twitter : 
+	* Accountanalysis : statistique sur un profil twitter 
+* Adresse mail : regarder des google dork 
+
+
+méthodologie : 
+	Orgainisaiton :
+
+* Méthodologie : 
+	* Orgnasitation
+		* A partir du site web
+		* Acceder aux réseaux sociaux
+		* Ou est basée l'orga?
+	* Se mettre à la place de la cible, et chaque cible est unique
+
+	## Ingénierie social
+
+* Amorçage : 
+	* Repose sur une mise en avant par le manipulateur d'avantages fictif dont le caractère illusoire est révélé in extremis
+		* Exemple : vient m'aider à déménager , OK, je te préviens juste maintenant que tu as accepté que c'est au 8ème, c'est un avantage fictif.
+* Pied dans la porte :
+	* Demander une action peu couteuse avant de demander une action couteuse
+		* On demande l'heure à une personne, puis on demande de l'argent.
+* Porte au nez : 
+	* Demander une action très couteuse qui sera refusée pour par la suite demander une action beaucoup moins couteuse qui elle sera acceptée.
