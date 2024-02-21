@@ -1,7 +1,7 @@
 
-## Gephi pour visualisation des données, flefgraph  
+## 1. Gephi pour visualisation des données, flefgraph  
 
-## Etape red team
+## 2. Etape red team
 
 * Envoie mail malveillant
 	* Fichier malveillant
@@ -24,7 +24,7 @@
 	* Sécurité des postes 
 
 
-## Investigation sur une région
+## 3. Investigation sur une région
 
 
 * OPSEC : permet de cacher son identité 
@@ -37,7 +37,7 @@
 	* Connaissances en direct sur les évènements 
 
 
-## Actualités 
+## 4. Actualités 
 
 * Comptes telegram spécialisés
 * Discord Project owl 
@@ -48,7 +48,7 @@
 
 
 
-## Investigation sur une organisation
+## 5. Investigation sur une organisation
 
 * Objectif : avoir le plus d'informations
 * Informations visées 
@@ -117,3 +117,7 @@ méthodologie :
 		* On demande l'heure à une personne, puis on demande de l'argent.
 * Porte au nez : 
 	* Demander une action très couteuse qui sera refusée pour par la suite demander une action beaucoup moins couteuse qui elle sera acceptée.
+
+
+### Cybertraque
+
