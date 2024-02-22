@@ -89,7 +89,7 @@ L'OSINT ça sert à qui/quoi :
 * Spear-phishing 
 	* Listing des employés de l'organisation
 	* Récupérations des coordonnées professionnelles des cibles
-	* Détections des mécanismes de sécurité présebts
+	* Détections des mécanismes de sécurité présents
 
 * Intrusion physique 
 	* Processus
@@ -219,3 +219,175 @@ méthodologie :
   	* Unseen tester
     	* Veut être vu par personne
     	* Agit souvent en pleine nuit s 
+
+
+# Riot games Los angeles 
+
+addresse : 12333 W Olympic Blvd, Los Angeles, CA 90064, États-Unis
+
+# Cadre 1 : l"entreprise
+
+## Organigramme 
+
+
+### Site officiel 
+https://www.riotgames.com/en/who-we-are/riot-games-leadership
+
+### Site non officiel 
+https://theorg.com/org/riot-games
+
+### Linkedin 
+https://www.linkedin.com/company/riot-games/people/?facetSchool=3084
+
+
+## Archives 
+
+	web.archive.org/web/*/https://www.riotgames.com/* 
+
+## DNS
+
+Plusieurs sites, celui de riot games Los Angeles :
+@ ip : 43.229.64.0/22
+PLATFORM DOMAINS
+	Logo Akamai	{hidden}.dscj.akamaiedge.net	and 1 more
+	Logo CloudFlare	{hidden}.cloudflare.net	and 2 more
+	Logo Lumen CDN	{hidden}.footprint.net	
+	Logo Netlify Hosting	{hidden}.netlifyglobalcdn.com	
+	Logo Zendesk
+hosting :
+	Logo Netlify Hosting	49
+	Logo Amazon AWS	194
+	Logo Tencent Cloud	13
+	Logo RETN	9
+
+En californie : 
+- Amazon AWS	- Logo Amazon AWS	US West (N. California)	 United States	13.57.61.52	90 IPs
+- Netlify Hosting	- Logo Amazon AWS	US West (N. California)	 United States	54.67.4.46	2 IPs
+
+## Infomrations légales
+
+Opencorporates : Opencorporates, parmis 65 entreprises, celle qui nous intéresse est https://opencorporates.com/companies/us_de/4155843
+
+## Organisation leak 
+
+	Offshoreleaks.ciji
+
+ENTITY	JURISDICTION	LINKED TO	DATA FROM
+RIOT GAMES EUROPE HOLDINGS LIMITED |	Malta	| Malta	| Paradise Papers
+RIOT GAMES EUROPE PRODUCTION HOLDINGS LIMITED |	Malta |	Malta	Paradise Papers
+RIOT INVESTMENTS INC.	British Virgin Islands |	Switzerland	|Panama Papers
+RIOT BOUTIQUE CAFE LIMITED |	Malta	| Malta	 | Paradise Papers
+
+# Regarder les auxilaires 
+
+
+## Partenaires
+
+https://www.riotgames.com/fr/Qui-nous-sommes/impact-social/our-social-impact-partners
+intéressant : uber eats livre
+
+	## Besoins 
+
+* d'argent
+* de serveur 
+Tencent Holdings Limite
+## Poste à promouvoir 
+
+10 postes : 
+https://www.riotgames.com/en/work-with-us/offices/los-angeles
+
+
+On remarque plusieurs secteurs au sein de LA riot :
+* Data 
+* Esports
+* Game production
+* Art
+* Corporate 
+* Insights 
+* Software Engineering Group
+  * Compétences cherchés 
+    * JavaScript
+    * LINQ
+    * C# 
+* People
+
+https://www.riotgames.com/fr/faq#1
++ stages disponbiles à distance, 4ème semaine du mois de mai, et la deuxième semaine du mois de juin. Cela dure de 10 à 12 semaines
+
+
+## Demande de suppression de data 
+
++ de 400 000 demandes faites, la majortié des Digital Millennium Copyright Act (DMCA) 
+
+
+## Les locaux
+
+### Plannet 
+
+avec google dork intexte : building plan on tombe sur cela
+https://www.plannet.com/portfolio-items/riot-games/
+
+Pleins d'informations intéressantes, ils se sont occupés d'ammenager le site en deux espaces différents : 
+* Bâtiment LA, 1500 employés Santa Monica
+  * 5 bâtiments indépendants ;
+    * Building 1 Main Entry and workspaces
+    * Building 2 Amenities /Food Service
+    * Building 3 Workspace and some special functions
+    * Building 4 Workspace function
+    * Building 5 Storage and workspace
+  * Le batiment 5 contient les serveurs ? 
+  * 1 with Building 1 having a second floor/mezzanine 
+  * Building 5 with two floors and an underground garage
+* Olympic Boulevard, Wetside Media Center,site houses the Battle Arena along with associated production functions and some workplace functions.	
+  * The combined sites include a 1,300 SF server room
+  * A 1,675 SF Network Operations Center (NOC) 
+  * 1,000 SF central equipment room, theaters, sound rooms, composing rooms, mastering rooms, production, and audio control rooms, edit rooms, and other technical rooms. 
+    * The final design includes over 20 sound rooms, including a mastering studio.
+
+	* PLANNET provided full design, bidding, and implementation oversight for both projects. 
+	* PLANNET conducted the programming, provided cost estimations, created cabling and security low voltage drawing sets, full design (including systems drawings, architectural integration, and A/E coordination), full technical specifications, bidding support, construction administration, commissioning oversight and close-out representation for the following technologies: structured communications cabling system and infrastructure; and security infrastructure design and systems coordination.
+
+  * PLANNET also provided technology project management and coordinated all aspects of the cable infrastructure, audiovisual and security systems to be integrated into the new facility.
+pas de plan dans google archive
+
+Pour résumer : Plannet c'est occuper d'ammeneger les locaux, l'infrastructure matérielle et logistique des deux sites de riot games, mais surtout des systèmes de sécurités...
+
+
+## Info intéressante
+
+### adresse mail
+
+motif d'adresse mail
+bchui@riotgames.com
+*première_lettre_prénom + nom_complet @riotgames.com"
+
+
+### Activité dans l'entreprise
+
+* Une salle de sport
+* Salle de basket en extérieur
+* Une cuisine + salle de restoration 
+
+
+### S'habiller 
+
+* Tenue informel demandé sur Riot Games, et sur les nombreuses vidéos, il faut s'habiller comme un jeuns, et comme on est à l'aise
+
+### Discuter 
+
+Demander par la boîte :
+  * Language familier
+  * Avoir une passion pour les jeux vidéos, particulièrement ceux de league of legend
+  * Donner son champion préféré 
+  
+
+
+## Domaine, nom de proxy, adresse mail
+
+### Les comptes :
+
+* Un compte twitter très actif, avec des sous parties françaises...
+
+#### Reconnaissance twitter 
+
+### 
