@@ -1,5 +1,79 @@
 
-## 1. Gephi pour visualisation des données, flefgraph  
+## 1. OSINT c'est quoi?  
+
+Qu'est-ce que l'OSINT 
+
+OSINT : Méthode consistant à collecter et à analyser de l'informations provenant de sources publiques 
+
+Les différentes méthodes de renseignement :
+
+* HUMINT : Human Intelligence 
+
+	* Renseignement d'origine humaine 
+
+* SIGINT : Signal Intelligence 
+
+	* Renseignement d'origine électromagnétique 
+
+* IMINT : Imagery Intelligence 
+
+    * Renseignement d'origine humaine 
+
+* OSINT : Open Source Intelligence 
+
+    * Renseignement d'origine humaine 
+
+
+Avantages et inconvénients :
+
+  * L'OSINT c'est bien pour :  
+
+	* Savoir à qui j'ai à faire 
+
+    * Avoir une plus grande réactivité sur des actualités 
+
+    * Pouvoir tester mon exposition et identifier mes vulnérabilités 
+
+    * Être plus pertinent dans mes réponses 
+
+    * Trouver des informations pertinentes connues de peu de personnes 
+
+L'OSINT c'est moins bien pour :  
+
+  * Des personnes malveillantes peuvent utiliser à mon encombre 
+
+  * Les attaques contre ma personne/organisation/cercle proche sont plus difficilement identifiable 
+
+  
+
+L'OSINT ça sert à qui/quoi :
+
+  * Journalistes 
+
+  * Investigations (fact checking, …) 
+
+  * Forces de l'ordre 
+
+  * Lutte contre les trafics (armes, arts, contrefaçons, humains…) 
+
+  * Identifications de criminels (reconnaissances faciales, idetnficiations de lieux de résidences, d'exécution…) 
+
+  * Groupes malveillants 
+
+  * Identifications de vecteurs d'attaque 
+
+  * ONG 
+
+  * Investigations (Phénomènes d'actualités, désinformations…) 
+
+  * Entreprises 
+
+  * Sécurité informatiques (CTI, pentest, redteam) 
+
+  * Intelligences économique 
+
+  * Criminels 
+
 
 ## 2. Etape red team
 
@@ -119,5 +193,29 @@ méthodologie :
 	* Demander une action très couteuse qui sera refusée pour par la suite demander une action beaucoup moins couteuse qui elle sera acceptée.
 
 
-### Cybertraque
+### Intrusion physique
 
+* intrusion physique
+  * Dans les locaus d'une organisation cible afin de récupérer des informations ou déposer des dispositifs permettant de mener une attaque informatique interne 
+* Réparage :
+  * HO / HNO :
+    * Repérage des entreprises prestataires et des horaires
+    * Voir les différents accès 
+    * Détecter la présence des systèmes de vidéos surveillance et de communciation radio
+    * Essayer de rentrer au niveau de l'acceuil
+    * Plan évacuation
+    * Demander d'aller aux toilettes poru essayer d'aller plus loin
+    * Détection des types d'entrées 
+    * Fumer une cigarette devant les locaux
+
+
+3 techniques d'intrusion :
+	* Over tester 
+    	* Faire comme si de rien n'était
+    	* Avoir un scénario crédible
+  	* Covert tester 
+    	* Evite les interactions avec les gens
+    	* Attaque la plus simple et moins risqué
+  	* Unseen tester
+    	* Veut être vu par personne
+    	* Agit souvent en pleine nuit s 
