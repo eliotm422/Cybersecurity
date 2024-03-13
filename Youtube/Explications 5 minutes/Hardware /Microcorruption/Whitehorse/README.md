@@ -1,5 +1,3 @@
-.Microcorruption
-
 Le principe fondamental derrière l'exécution de code dans la mémoire grâce à une vulnérabilité de débordement de tampon (Buffer Overflow) repose sur la manipulation des données stockées dans la mémoire d'un programme pour altérer son comportement prévu.
 
 Lorsqu'un programme s'exécute, il utilise la mémoire pour stocker des données, telles que des variables, des instructions et d'autres informations nécessaires pour son fonctionnement. Cette mémoire est organisée de manière spécifique, avec différentes zones pour les variables locales, les données statiques, le code du programme lui-même, etc.
