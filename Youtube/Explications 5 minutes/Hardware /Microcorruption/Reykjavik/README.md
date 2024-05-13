@@ -125,4 +125,4 @@ b490 9357 dcff cmp	#0x5793, -0x24(r4)
 ````
 On compare la valeur 5793 avec ce qui est stocké dans r4 (peut être notre mot de passe), pour vérifier cela on va rentrer la valeur 9357 (MP430 Promuiscuité oninverse les octets entre eux).
 
-
+Si on rentre cela : c'est réussie .
