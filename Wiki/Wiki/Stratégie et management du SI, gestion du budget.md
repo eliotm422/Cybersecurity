@@ -1,0 +1,1 @@
+	Faire un SWAT de Thales, faire un projet d'innovation pour l'entreprise, faire un pp.
