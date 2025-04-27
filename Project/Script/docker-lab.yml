@@ -1,0 +1,103 @@
+- name: Déployer le projet Load Balancer
+  hosts: localhost
+  become: true
+  vars:
+    base_dir: "/home/kali/load-balancer-project"
+
+  tasks:
+
+    - name: Créer la structure de base du projet
+      file:
+        path: "{{ base_dir }}/{{ item }}"
+        state: directory
+      loop:
+        - nginx-lb
+        - web1
+        - web2
+
+    - name: Créer le fichier web1/index.html
+      copy:
+        dest: "{{ base_dir }}/web1/index.html"
+        content: |
+          <h1>Hello depuis Web1 !</h1>
+
+    - name: Créer le fichier web1/Dockerfile
+      copy:
+        dest: "{{ base_dir }}/web1/Dockerfile"
+        content: |
+          FROM nginx:alpine
+          COPY index.html /usr/share/nginx/html/index.html
+
+    - name: Créer le fichier web2/index.html
+      copy:
+        dest: "{{ base_dir }}/web2/index.html"
+        content: |
+          <h1>Hello depuis Web2 !</h1>
+
+    - name: Créer le fichier web2/Dockerfile
+      copy:
+        dest: "{{ base_dir }}/web2/Dockerfile"
+        content: |
+          FROM nginx:alpine
+          COPY index.html /usr/share/nginx/html/index.html
+
+    - name: Créer le fichier de configuration Nginx pour le load balancer
+      copy:
+        dest: "{{ base_dir }}/nginx-lb/default.conf"
+        content: |
+          upstream backend {
+              server web1:80;
+              server web2:80;
+          }
+
+          server {
+              listen 80;
+              location / {
+                  proxy_pass http://backend;
+              }
+          }
+
+    - name: Créer le fichier docker-compose.yml
+      copy:
+        dest: "{{ base_dir }}/docker-compose.yml"
+        content: |
+          version: '3'
+
+          services:
+            web1:
+              build: ./web1
+              container_name: web1
+              expose:
+                - "80"
+
+            web2:
+              build: ./web2
+              container_name: web2
+              expose:
+                - "80"
+
+            nginx-lb:
+              image: nginx:alpine
+              container_name: load_balancer
+              ports:
+                - "8080:80"
+              volumes:
+                - ./nginx-lb/default.conf:/etc/nginx/conf.d/default.conf
+              depends_on:
+                - web1
+                - web2
+
+
+    - name: Supprimer les conteneurs existants s’ils bloquent
+      command: docker rm -f web1 web2 load_balancer
+      ignore_errors: yes
+      
+    - name: Build les conteneurs
+      command: docker-compose build
+      args:
+        chdir: "{{ base_dir }}"
+
+    - name: Lancer les services
+      command: docker-compose up -d
+      args:
+        chdir: "{{ base_dir }}"

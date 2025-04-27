@@ -1,0 +1,153 @@
+- hosts: localhost
+  connection: local
+
+  tasks:
+    - name: Execute shell cmd
+      shell: |
+        # Principe : écrire des fichiers pour mettre en place une config vulénrable avec un port web exposé au 8080
+
+        echo -e "Configuration recherchée :\n\
+        docker-load-balancer\n\
+        ├── docker-compose.yml\n\
+        ├── nginx-lb/\n\
+        │   └── default.conf\n\
+        ├── web1/\n\
+        │   ├── Dockerfile\n\
+        │   └── index.html\n\
+        ├── web2/\n\
+        │   ├── Dockerfile\n\
+        │   └── index.html"
+
+      register: result
+
+    - name: Get result*
+      debug:
+        var: result
+
+    - name: Install docker
+      apt:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - docker.io
+        - docker-compose
+    
+    - name: Execute shell cmd
+      shell: |
+        # Principe : écrire des fichiers pour mettre en place une config vulénrable avec un port web exposé au 8080
+
+        echo "Création de l'environnement du load balancer..."
+
+        # Créer l'arborescence
+        mkdir -p nginx-lb/web1 nginx-lb/web2
+
+    - name: Create files /web1/index.html
+      copy:
+        dest: "nginx-lb/web1/index.html"
+        content: |
+          <h1>Bonjour depuis Web1 !</h1>
+        
+
+    - name: Create files web1/Dockerfile
+      copy:
+        dest: "nginx-lb/web1/Dockerfile"
+        content: |
+          FROM nginx:alpine
+          COPY index.html /usr/share/nginx/html/index.html
+
+    - name: Create files /web2/index.html
+      copy:
+        dest: "nginx-lb/web2/index.html"
+        content: |
+          <h1>Bonjour depuis Web1 !</h1>
+ 
+    - name: Create files nginx-lb/web2/Dockerfile
+      copy:
+        dest: "nginx-lb/web2/Dockerfile"
+        content: |
+          FROM nginx:alpine
+          COPY index.html /usr/share/nginx/html/index.html
+
+    - name: Create files LOADBALANCER nginx
+      copy:
+        dest: "nginx-lb/default.conf"
+        content: |
+          upstream backend {
+              server web1:80;
+              server web2:80;
+              }
+
+              server {
+                  listen 80;
+
+                  location / {
+                      proxy_pass http://backend;
+                  }
+              }
+
+    - name: Create files LOADBALANCER nginx-lb/docker-compose.yml
+      copy:
+        dest: "nginx-lb/docker-compose.yml"
+        content: |
+          nginx-lb/docker-compose.yml
+          version: '3'
+
+          services:
+            web1:
+              build: ./web1
+              container_name: web1
+              expose:
+                - "80"
+
+            web2:
+              build: ./web2
+              container_name: web2
+              expose:
+                - "80"
+
+            nginx-lb:
+              image: nginx:alpine
+              container_name: load_balancer
+              ports:
+                - "8080:80"
+              volumes:
+                - ./nginx-lb/default.conf:/etc/nginx/conf.d/default.conf
+              depends_on:
+                - web1
+                - web2
+
+- name: Déploiement du Load Balancer avec Docker Compose
+  hosts: all
+  become: true
+
+  tasks:
+
+    - name: Affichage - Tous les fichiers ont été créés
+      debug:
+        msg: "Tous les fichiers ont été créés avec succès."
+
+    - name: Affichage - Construction et lancement de l'infrastructure
+      debug:
+        msg: "Construction et lancement de l'infrastructure en cours..."
+
+    - name: Construction des conteneurs Docker
+      command: docker-compose build
+      args:
+        chdir: /home/{{ ansible_user }}/docker-load-balancer
+
+    - name: Lancement des services Docker
+      command: docker-compose up -d
+      args:
+        chdir: /home/{{ ansible_user }}/docker-load-balancer
+
+    - name: Affichage - URL d'accès au load balancer
+      debug:
+        msg: "Accès au load balancer : http://localhost:8080"
+
+    - name: Vérification HTTP avec wget
+      command: wget -qO- http://localhost:8080
+      register: lb_test
+
+    - name: Affichage de la réponse HTTP du load balancer
+      debug:
+        var: lb_test.stdout
