@@ -1,5 +1,5 @@
 
-Ce projet répond au projet demandé par le professeur de Loadbalancing qui demandait :*
+Ce projet répond aux attentes demandées par le professeur de Loadbalancing qui comprennait :
 * Des serveurs nginx, à savoir 2
 * Un laodbalancer pour ces deux serveurs
 * Des attaques de pentest, à savoir l'énumération web et le DOS (Denial of Service)
