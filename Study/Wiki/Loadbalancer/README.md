@@ -12,7 +12,7 @@ Ce projet répond au livrable demandé par le professeur qui demandait :
 
 # Liens :
 
-Vous retrouverez la première partie [ici](Build_infra.md), la seconde partie [ici](Partie_pentest.md), et enfin la dernière partie [ici](Build_SQL). En bonus la correction des vulnérabilités [ici](fix.md)
+Vous retrouverez la première partie [ici](Build_infra.md), la seconde partie [ici](Partie_pentest.md), et enfin la dernière partie [ici](Build_SQL.md). En bonus la correction des vulnérabilités [ici](fix.md)
 
 Les captures d'écrans se trouvent [ici](Screen).
 
