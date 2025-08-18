@@ -8,7 +8,7 @@ Immunity debbuger
 
 * Langage d'assembleur : il communique directement avec le microprocesseur : c'est un langage de bas niveau, il est lié au fonctionnement de la machine
 * C'est pour ça en le comprenant, on comprendra d'autres notions
-* ![](Pasted image 20231121093542.jpg)
+* ![Screen](Images/Pasted image 20231121093542.jpg)
 
 ## I.1 : Le compilateur 
 
