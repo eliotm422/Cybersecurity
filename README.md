@@ -6,6 +6,6 @@ Je voudrai si possible que vous me citiez si vous utilisez mes notes, ça me fai
 
 # Les 3 règles en informatiques #
  
-ça peut paraître bullshit, peut-être que cela l'est, mais je garde 4 règles pour continuez à m'épanouir sur le bon terme:
+Peut être c'est bullshit, mais je garde 4 règles pour continuer à m'épanouir sur le long terme:
 
 ![alt text](regles.png)
