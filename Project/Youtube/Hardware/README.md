@@ -11,3 +11,7 @@ Ce dossier contient des explications hardware
 # Signal et porte logique
 
 ![alt text](../../../Screen/porte.png)
+
+# Les OS 
+
+![alt text](../../../Screen/OS.png)
