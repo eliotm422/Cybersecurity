@@ -6,4 +6,8 @@ Ce dossier contient des explications hardware
 
 # Communication
 
-![alt text](../signal.png)
+![alt text](../../signal.png)
+
+# Signal et porte logique
+
+![alt text](../porte.png)
