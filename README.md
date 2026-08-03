@@ -8,4 +8,4 @@ Je voudrai si possible que vous me citiez si vous utilisez mes notes, ça me fai
  
 Peut être c'est bullshit, mais je garde 4 règles pour continuer à m'épanouir sur le long terme:
 
-![alt text](regles.png)
+![alt text](Screen/regles.png)
