@@ -16,6 +16,10 @@ Ce dossier contient des explications hardware
 
 ![alt text](../../../Screen/OS.png)
 
+# Schéma final
+
+![alt text](../../../Screen/ordinateur.png)
+
 # Source
 
 Fonctionnement matériel informatique:
