@@ -2,7 +2,7 @@ Ce dossier contient des explications hardware
 
 # Ordinateur
 
-![alt text](../../schema_ordinateur.png)
+![alt text](../../../Screen/schema_ordinateur.png)
 
 # Communication
 
@@ -10,4 +10,4 @@ Ce dossier contient des explications hardware
 
 # Signal et porte logique
 
-![alt text](../porte.png)
+![alt text](../../../Screen/porte.png)
