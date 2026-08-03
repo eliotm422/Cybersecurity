@@ -2,7 +2,7 @@ Ce dossier contient des explications hardware
 
 # Ordinateur
 
-![alt text](../schema_ordinateur.png)
+![alt text](../../schema_ordinateur.png)
 
 # Communication
 
